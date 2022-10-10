@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Project Website</title>
+    <link rel="stylesheet" href='./CSS/BlogStyle.css'>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Title</a>
+        <ul>
+            <li>
+                <a href="./home.html" class="button">Home</a>
+            </li>
+            <li>
+                <a href="./blog.html" class="button">Blog</a>
+            </li>
+            <li>
+                <a href="#" class="button">Tour</a>
+            </li>
+            <li>
+                <a href="#" class="button" >Traveler's Tips</a>
+            </li>
+        </ul>
+    </header>
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY >0)
+        })
+    </script>
+    <div class="BlogBackground">
+<center><img class= 'banner' src="/HTML/asia-gca3a970f9_1280.jpg" height="25%" width="100%"></center>
+    </div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Project Website</title>
+    <link rel="stylesheet" href='./CSS/HomeStyle.css'>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Title</a>
+        <ul>
+            <li>
+                <a href="./home.html" class="button">Home</a>
+            </li>
+            <li>
+                <a href="./blog.html" class="button">Blog</a>
+            </li>
+            <li>
+                <a href="#" class="button">Tour</a>
+            </li>
+            <li>
+                <a href="#" class="button" >Traveler's Tips</a>
+            </li>
+        </ul>
+    </header>
+    <section class="banner">
+       <div>
+        <button class="scrollButton" id="scoll"></button>
+       </div>
+        <script type="text/javascript">
+            window.addEventListener('scroll', function(){
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY >0)
+            })
+            document.getElementById('scoll').addEventListener('click', function(){
+                document.getElementById('yes').scrollIntoView({behaviour:'smooth'})
+                console.log('hi')
+            })
+        </script>
+    </section>
+    <div class="content">
+    <section>
+        <div class="HomeHeading" id = 'yes'>
+            <h1>About me</h1>
+        </div>
+        <div class="AboutMe">
+            <p>
+                Hi there! I am Ayushman and I am 10th grade. I recently shifted to Singapore and as a part of my Personal project, I have created a website 
+            </p>
+        </div>
+        <div class="line"></div>
+    </section>
+</div>
+</body>
+</html>
